@@ -1,0 +1,133 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background:#0a1a2a;
+    height: 85px;
+    width: 100%;
+    padding:  50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	
+}
+.logo{
+    height: 85px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 20px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    border-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+	
+	transition: all 0.5 ease;
+}
+
+
+  nav a:hover{
+	  padding: 20 20;
+	 border-radius: 15px;
+    color: #2079B1;
+	  background: #FFFFFF;
+    transition: all 0.5 e
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.change span:nth-child(1) { animation-delay: -0s; }
+.change span:nth-child(2) { animation-delay: -2s; }
+.change span:nth-child(3) { animation-delay: -4s; }
+.change span:nth-child(4) { animation-delay: -6s; }
+.change span:nth-child(5) { animation-delay: -8s; }
+.change span:nth-child(6) { animation-delay: -10s; }
+
+@keyframes blinker {
+50% {
+    opacity: 0;
+}
+}
+@keyframes hideShow {
+0%, 16.6%, 33.33%, 100% { width: 0; }
+16.66%, 33.3% { width: auto; }
+}
+
+/* PRODUCTS */
+.products .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.products .row .box{
+    width: 320px;
+    border: solid
+}
+
+/* MEDIAS QUERIES */
+@media (max-width: 952px){
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: flex;
+    }
+    nav{
+        padding: 0 30px;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - px);
+        background:#0d2033;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+        z-index: 10;
+    }
+    nav ul li{
+        margin: 20px 0;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        //background: #000090;
+        //color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+	.nosotro {
+width: 70%;
+		
+		
+	}
+	

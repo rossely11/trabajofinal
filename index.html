@@ -1,0 +1,242 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> LPG_Supply_Group </title>
+	<link rel="icon" type="img/jpg" href="lpg logo.png">
+	   
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+	<link rel="stylesheet" href="menu.css">
+   <link rel="stylesheet" href="dex.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+     <nav>
+         
+       <img src="lpg logo.png" alt="" class="logo">
+         
+         <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">
+             <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+     <li><a class="active" href="index.html">Inicio</a></li>
+             <li><a href="serv.html">Servicios</a></li>
+             <li><a href="porta.html">Portafolio</a></li>
+             <li><a href="contacto.html">Contacto</a></li>
+         </ul>
+     </nav>
+ </header>
+
+
+<br> <br>
+
+
+<center><div class="img-slider">
+   <div class="slide active">
+     <img src="lpg inicio.webp" alt="">
+     <div class="info">
+       
+     </div>
+   </div>
+   <div class="slide">
+     <img src="contacto.jpeg" alt="">
+     <div class="info">
+       
+     </div>
+   </div>
+   <div class="slide">
+     <img src="im.jpg" alt="">
+     <div class="info">
+       
+     </div>
+   </div>
+   <div class="slide">
+     <img src="lpg logo.png" alt="">
+     <div class="info">
+      
+     </div>
+   </div>
+   
+   <div class="navigation">
+     <div class="btn active"></div>
+     <div class="btn"></div>
+     <div class="btn"></div>
+     <div class="btn"></div>
+    
+   </div>
+ </div></center>
+
+
+<br>
+
+<div class="nosotro">
+<h1>      <center>    Tienda de Seguridad, Tecnología, Inmobiliario y Papelería</center> 
+</h1> <br> <br>
+<h2> Somos una tienda donde reparamos computadoras, le instalamos cualquier disco duro, entre otras cosas, también vendemos celulares, televisiones, cámaras de seguridad y muebles de empresas, tales como escritorio, papelera, sillas etc.                     </h2>
+ 
+</div>
+
+
+
+
+
+
+
+<!--   Tarjetas-->
+<div class="title-cards">
+ 
+<h2> ventas</h2>
+</div>
+<div class="container-card">
+
+<div class="card">
+<figure>
+ <img src="tecno..jpeg">
+</figure>
+<div class="contenido-card">
+ <h3>Ventas de Tegnología</h3>
+ <p>Ventas de articulos de tecnología al mejor precio del mercado y con la reputación que nos caracteriza</p>
+ <a href="tecnologia.html">Ver productos</a>
+</div>
+</div>
+<div class="card">
+<figure>
+ <img src="seguridad.jpg">
+</figure>
+<div class="contenido-card">
+ <h3>Área de seguridad</h3>
+ <p>Aquí encontrarás la seguridad que necesitas en casa o empresa con la mayor calidad del mercado. </p>
+ <a href="seguridad.html">Ver productos</a>
+</div>
+</div>
+
+</div>
+<!--Fin   Tarjetas-->
+
+ <!--   Tarjetas-->
+<div class="title-cards">
+ <h2> Algunos de nuestro trabajos</h2>
+</div>
+<div class="container-card">
+
+
+<div class="card">
+<figure>
+ <video  controls>
+   <source src="DISCO.mp4" type="video/mp4">
+ </video>
+</figure>
+<div class="contenido-card">
+ <h3>Fallo en el disco</h3>
+ <p>Fallo común</p>
+ 
+</div>
+</div>
+<div class="card">
+<figure>
+ <video  controls>
+   <source src="Cámaras video.mp4"="video/mp4">
+ </video>
+</figure>
+<div class="contenido-card">
+ <h3>Cámaras de seguridad </h3>
+ <p>Variedades de nuestras cámaras</p>
+</div>
+</div>
+
+
+</div> <br> <br>
+<!--Fin   Tarjetas-->
+
+
+
+<!--::::Pie de Pagina::::::-->
+ <footer class="pie-pagina">
+     <div class="grupo-1">
+         <div class="box">
+             <figure>
+                 <a href="#">
+                     <img src="lpg logo.png" alt="Logo de celular world">
+                 </a>
+             </figure>
+         </div>
+        
+         <div class="box">
+             <h2>SíGUENOS</h2>
+             <div class="red-social">
+                
+                 <a href="https://www.instagram.com/lpgtecnologia/?hl=es" class="fa fa-instagram" target="_blank"></a>
+                 
+             </div>
+         </div>
+     </div>
+     <div class="grupo-2">
+         <small>&copy; 2024 <b>Rossely</b> - Todos los Derechos Reservados.</small>
+     </div>
+ </footer>
+
+	  <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+
+    // Javascript for image slider autoplay navigation
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 10000);
+      }
+      repeater();
+    }
+    repeat();
+    </script>
+	
+   
+</body>
+</html>
